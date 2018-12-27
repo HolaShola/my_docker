@@ -1,0 +1,21 @@
+version: '3'
+services:
+  hello-world:
+    image: hello-world:latest
+    container_name: hello-world
+    environment:
+      port: 9000
+    expose:
+      - "9000"
+    ports:
+      - "8080:9000"
+  
+  hello-docker:
+    image: hello-docker:latest
+    container_name: hello-docker
+    expose:
+      - "8080"
+    ports:
+      - "8080:8080"
+    volumes:
+      - /Users/...
